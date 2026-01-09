@@ -11,13 +11,24 @@ Un pequeño juego narrativo con combate por turnos, estética retro Game Boy y m
 ```
 las-aventuras-de-tink/
 ├── index.html
-│   └─ Estructura HTML principal del juego
 ├── styles.css
-│   └─ Estilos con estética Game Boy retro
-├── game.js
-│   └─ Lógica principal del juego, combate y decisiones
-└── README.md
-    └─ Documentación del proyecto
+├── README.md
+└── js/
+    ├── game.js
+    ├── data/
+    │   ├── weapons.js
+    │   ├── items.js
+    │   ├── enemies.js
+    │   └── music.js
+    ├── systems/
+    │   ├── combat.js
+    │   ├── inventory.js
+    │   └── ui.js
+    └── scenes/
+        ├── intro.js
+        ├── village.js
+        ├── dungeons.js
+        └── exploration.js
 ```
 
 ---
