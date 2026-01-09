@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Aventuras de Tink - Un Homenaje Paródico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Header con el título del juego -->
+        <header class="game-header">
+            <h1>⚔️ Las Aventuras de Tink ⚔️</h1>
+            <p class="subtitle">En la Isla del Despertar... o algo así</p>
+        </header>
+
+        <!-- Panel de estadísticas del jugador -->
+        <div class="stats-panel">
+            <div class="player-stats">
+                <h3>🧙 Tink</h3>
+                <div class="stat-bar">
+                    <span class="stat-label">❤️ Vida:</span>
+                    <span id="player-hp" class="stat-value">100/100</span>
+                </div>
+                <div class="stat-bar">
+                    <span class="stat-label">⚔️ Ataque:</span>
+                    <span id="player-atk" class="stat-value">10</span>
+                </div>
+                <div class="stat-bar">
+                    <span class="stat-label">🛡️ Defensa:</span>
+                    <span id="player-def" class="stat-value">5</span>
+                </div>
+            </div>
+
+            <div class="inventory-panel" id="inventory">
+                <h3>🎒 Inventario</h3>
+                <div id="weapon-list" class="weapon-list"></div>
+            </div>
+        </div>
+
+        <!-- Área de narrativa y eventos -->
+        <div class="narrative-box" id="narrative">
+            <p class="narrative-text">Cargando tu aventura épica (más o menos)...</p>
+        </div>
+
+        <!-- Panel de combate (oculto por defecto) -->
+        <div class="combat-panel hidden" id="combat-panel">
+            <div class="enemy-stats">
+                <h3 id="enemy-name">👹 Enemigo</h3>
+                <div class="stat-bar">
+                    <span class="stat-label">❤️ Vida:</span>
+                    <span id="enemy-hp" class="stat-value">50/50</span>
+                </div>
+                <div class="stat-bar">
+                    <span class="stat-label">⚔️ Ataque:</span>
+                    <span id="enemy-atk" class="stat-value">8</span>
+                </div>
+                <div class="stat-bar">
+                    <span class="stat-label">🛡️ Defensa:</span>
+                    <span id="enemy-def" class="stat-value">3</span>
+                </div>
+            </div>
+
+            <div class="combat-log" id="combat-log">
+                <p>¡Preparado para el combate!</p>
+            </div>
+
+            <div class="weapon-selection" id="weapon-selection">
+                <h4>Elige tu arma:</h4>
+                <div id="combat-weapons"></div>
+            </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="action-buttons" id="action-buttons">
+            <!-- Los botones se generarán dinámicamente -->
+        </div>
+
+        <!-- Footer -->
+        <footer class="game-footer">
+            <p>Un homenaje paródico a The Legend of Zelda: Link's Awakening</p>
+            <p class="credits">Inspirado en el estilo de Jesús Martínez del Vas</p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
